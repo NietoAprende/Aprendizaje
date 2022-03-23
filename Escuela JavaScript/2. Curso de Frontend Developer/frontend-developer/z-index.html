@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      position: absolute;
+    }
+
+    .card {
+      display: flex;
+      width: 120px;
+      height: 170px;
+      border-radius: 12%;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .blue {
+      background-color: blue;
+      z-index: 2;
+      top: 100px;
+      left: 50px;
+    }
+
+    .red {
+      background-color: red;
+      z-index: 4;
+      top: 10px;
+      position: absolute;
+    }
+
+    .yellow {
+      background-color: yellow;
+      z-index: 10;
+      bottom: 50px;
+      left: 25px;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="red card">Red</div>
+    <div class="blue card">Blue
+      <div class="yellow card">Yellow</div>
+    </div>
+  </section>
+</body>
+
+</html>
